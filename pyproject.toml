@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python_gt_client"
+version = "0.1.0"
+description = "Python client for the Mieza GTO service (generated from OpenAPI)."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Mieza", email = "support@mieza.ai" }]
+license = { text = "MIT" }
+dependencies = [
+  "attrs>=23.1.0",
+  "httpx>=0.24.1",
+  "requests>=2.25.1",
+  "cryptography>=46.0.5",
+]
+
+[project.urls]
+Homepage = "https://mieza.ai"
+Repository = "https://github.com/tacktechai/mieza-api-python"
+
+[tool.uv]
+index-url = "https://pypi.org/simple"
+
+[dependency-groups]
+dev = [
+  "openapi-python-client",
+  "pytest==8.4.2",
+  "pytest-cov==5.0.0",
+  "flake8==7.3.0",
+  "isort==5.13.2",
+  "black==25.11.0",
+  "twine",
+  "wheel",
+]
