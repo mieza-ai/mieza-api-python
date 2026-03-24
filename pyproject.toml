@@ -19,7 +19,7 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://mieza.ai"
-Repository = "https://github.com/tacktechai/mieza-api-python"
+Repository = "https://github.com/mieza-ai/mieza-api-python"
 
 [tool.uv]
 index-url = "https://pypi.org/simple"
